@@ -4,7 +4,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: #cfcccc;
+    background-color: #c0baba;
   }
   
   li {
@@ -20,10 +20,13 @@ ul {
   }
   
   li a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: rgb(153, 151, 151);
   }
   
   li a.active {
     color: white;
     background-color: #4CAF50;
   }
+.aright {
+  float: right;
+}

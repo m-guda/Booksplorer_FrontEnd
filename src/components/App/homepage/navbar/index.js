@@ -1,19 +1,59 @@
 import React from 'react';
-import './app.css';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem } from 'reactstrap';
 
-import { Link } from 'react-router-dom';
-class NavBar extends React.Component {
+  import{
+    BrowserRouter as Router,
+    Route,
+    Switch,
+    Redirect,
+}from 'react-router-dom'
+import Login from './login';
+
+export default class Example extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
   render() {
     return (
-      <header>
-        <ul className="header">
-          <li><a href="#">Booksplorer</a></li>
-         
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Login/Signup</a></li>
-        </ul>
-      </header>
-    )
+      
+      <div>
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">Booksplorer</NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+          <NavbarBrand href="/">About us</NavbarBrand>
+          <NavbarBrand href="/">Contact us</NavbarBrand>
+            <Nav className="ml-auto">
+              <NavItem>
+                <NavLink href="login">Login</NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+        
+      </div>
+    
+    );
   }
 }
-export default NavBar;

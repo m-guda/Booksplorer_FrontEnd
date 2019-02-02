@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class SearchBar extends Component {
+class SearchBar extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -25,7 +25,7 @@ class SearchBar extends Component {
           <input
             type='text'
             size='75'
-            placeholder='Enter title,author'
+            placeholder='Search book'
             onChange={this.handleSearch.bind(this)}
             value={this.state.username} />
           <button

@@ -14,9 +14,8 @@ class Homepage extends React.Component{
        return(
       
                 <div>
-                    <NavBar /><br/>
-                    <Searchbar/><br/>
-                    
+                    <NavBar /><br/><br/>
+                    <Searchbar/><br/><br/>
                     <Example/>
                     </div>
  
