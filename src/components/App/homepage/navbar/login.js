@@ -1,4 +1,6 @@
 import React from 'react';
+import Register from './register';
+import { Link } from 'react-router-dom';
 import {
   Container, Col, Form,
   FormGroup, Label, Input,
@@ -48,7 +50,7 @@ class Login extends React.Component {
     const { email, password } = this.state;
     return (
       <Container className="App">
-        <h2>Sign In</h2>
+        <h2>Login</h2>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
           <Col>
             <FormGroup>
@@ -81,7 +83,9 @@ class Login extends React.Component {
             />
             </FormGroup>
           </Col>
-          <Button>Submit</Button>
+          <Button>Submit</Button>&nbsp;&nbsp;
+         <Button> <Link to="/register" style={{color:'#FFF'}} >Sign Up</Link> 
+         </Button>
       </Form>
       </Container>
     );

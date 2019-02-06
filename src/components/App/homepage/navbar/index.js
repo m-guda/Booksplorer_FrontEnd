@@ -46,8 +46,11 @@ export default class Example extends React.Component {
           <NavbarBrand href="/">Contact us</NavbarBrand>
             <Nav className="ml-auto">
               <NavItem>
-                <NavLink href="login">Login</NavLink>
-              </NavItem>
+              <NavLink href="/sellbook">Sell A Book</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/login">Login</NavLink>
+            </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

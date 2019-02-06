@@ -33,27 +33,28 @@ const Example = (props) => {
       <Card>
         <CardImg top width="20%" src={book3} height="350" alt="Card image cap" />
         <CardBody><center>
-          <CardTitle>Accordin Crimes</CardTitle>
+          <CardTitle><b>Accordin Crimes</b></CardTitle>
           <CardSubtitle>by <b>Annie Proulx</b></CardSubtitle>
           <CardText>$250</CardText>
+          <br/>
           <Button>Locate Book</Button></center>
         </CardBody>
       </Card>
       <Card>
         <CardImg top width="20%" src={book4} height="350" alt="Card image cap" />
         <CardBody><center>
-          <CardTitle>Bridge of Clay</CardTitle>
+          <CardTitle><b>Bridge of Clay</b></CardTitle>
           <CardSubtitle>by <b>Markus Zusak</b></CardSubtitle>
-          <CardText>$130</CardText>
+          <CardText>$130</CardText><br/>
           <Button>Locate Book</Button></center>
         </CardBody>
       </Card>
       <Card>
         <CardImg top width="20%" src={book5} height="350" alt="Card image cap" />
         <CardBody><center>
-          <CardTitle>Southernmost</CardTitle>
+          <CardTitle><b>Southernmost</b></CardTitle>
           <CardSubtitle>by<b> Silas House</b></CardSubtitle>
-          <CardText>$120</CardText>
+          <CardText>$120</CardText><br/>
           <Button>Locate Book</Button></center>
         </CardBody>
       </Card>
