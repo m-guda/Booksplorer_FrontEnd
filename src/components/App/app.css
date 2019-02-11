@@ -27,3 +27,7 @@ ul {
     color: white;
     background-color: #4CAF50;
   }
+
+  header {
+  height : 500px;
+  }

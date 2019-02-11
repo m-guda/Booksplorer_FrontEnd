@@ -17,6 +17,12 @@ module.exports = {
     publicPath: "/",
     filename: "[name].[hash:8].js"
   },
+  // externals: ['axios'],
+  // resolve: {
+  //   alias: {
+  //     'js-data-angular': '../dist/js-data-angular.js'
+  //   }
+  // }
   target: "web",
   devtool: DEV ? "eval" : false, // 'source-map'
   // devtool: "inline-source-map",

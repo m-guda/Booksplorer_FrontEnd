@@ -1,10 +1,11 @@
-ul {
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
     background-color: #cfcccc;
+    height: 75px;
   }
   
   li {
@@ -21,9 +22,48 @@ ul {
   
   li a:hover:not(.active) {
     background-color: #ddd;
+    
   }
   
   li a.active {
     color: white;
     background-color: #4CAF50;
   }
+
+  /* header{
+    height: 100px;
+  } */ */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #c0baba;
+    height: 75px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(153, 151, 151);
+  }
+  
+  li a.active {
+    color: white;
+    background-color: #4CAF50;
+  }
+.aright {
+  float: right;
+}

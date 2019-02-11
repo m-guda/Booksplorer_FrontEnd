@@ -12,10 +12,13 @@
     "node": ">=10"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
+    "jquery": "^1.9.1",
     "lokijs": "^1.5.6",
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.5",
+    "react-coverflow": "^0.2.18",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
     "reactstrap": "^7.1.0"
@@ -41,7 +44,7 @@
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.9"
+    "webpack-dev-server": "^3.1.14"
   },
   "browserslist": {
     "development": [

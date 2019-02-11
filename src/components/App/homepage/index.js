@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Example from "./example/index";
 import Searchbar from "./searchbar/index";
 import NavBar from './navbar/index';
+import Carousal from './Carousal'
 import axios from "axios";
 import "./Book.css"
 
@@ -38,8 +39,41 @@ class Homepage extends React.Component{
       
                 <div>
                     <NavBar /><br/>
-                    <Searchbar/><br/>
-                                
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Carousal/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <Searchbar/><br/>                                
                     <Example books={this.state.books} />
                     </div>
  

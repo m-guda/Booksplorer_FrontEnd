@@ -20,7 +20,7 @@ class SearchBar extends Component {
 
   render () {
     return (
-      <div className='searchbar-container' align="center">
+      <div className='searchbar-container' align="center" style={{fontSize : "30px"}}>
         <form onSubmit={e => e.preventDefault()}>
           <input
             type='text'
