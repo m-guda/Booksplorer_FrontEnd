@@ -1,14 +1,12 @@
 import React from "react";
 import './index.css';
-import Homepage from "../homepage/index";
-
-
-const Background = () => {
+import HomePage from "../HomePage/index";
+const Background1 = () => {
   return (
     
       <div className="bg">
      
-      <Homepage/>
+      <HomePage/>
 
       </div>
      
@@ -16,4 +14,4 @@ const Background = () => {
   );
 }
 
-export default Background;
+export default Background1;

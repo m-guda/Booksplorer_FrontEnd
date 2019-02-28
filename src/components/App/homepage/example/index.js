@@ -8,13 +8,13 @@ import BookList from '../BookList';
 const Example = (props) => {
   console.log(props)
   return (
-    <CardDeck>
+    <div style={{display: 'flex', flexWrap:'wrap', margin: '5px'}}>
       {
         props.books.map((book) => {
           return (
-            <Card>
+            <Card style={{width:'350px', margin:'10px'}}>
             <CardImg top width="30%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
-            <CardBody style = {{background : "black"}}>
+            <CardBody>
               <CardTitle>{book.title}</CardTitle>
               <CardSubtitle>{book.author}</CardSubtitle>
               <CardText>{book.price}</CardText>
@@ -25,7 +25,7 @@ const Example = (props) => {
         })
       }
 
-    </CardDeck>
+    </div>
   );
 };
 

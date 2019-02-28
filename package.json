@@ -16,6 +16,7 @@
     "bootstrap": "^4.2.1",
     "jquery": "^1.9.1",
     "lokijs": "^1.5.6",
+    "mdbreact": "^4.11.0",
     "react": "^16.7.0",
     "react-bootstrap": "^1.0.0-beta.5",
     "react-coverflow": "^0.2.18",

@@ -60,27 +60,29 @@ export default class Example extends React.Component {
   render() {
     return (
       
-      <div>
-        <Navbar color="light" light expand="md">
+      <div class="container">
+      <div class="row">
+          <Navbar color="bg-primary" fixed="top" dark expand="md" scrolling transparent>
+          <div class="col">
           <NavbarBrand href="/" style={{fontSize : "30px"}}>Booksplorer</NavbarBrand>
+          </div>
+          <div class="col-7">
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
           <NavbarBrand href="/">How it Works?</NavbarBrand>
           <NavbarBrand href="/">Who's it for?</NavbarBrand>
           <NavbarBrand href="/">Reach Out!</NavbarBrand>
-            <Nav className="ml-auto">
-              <NavItem>
-              <NavLink href="/sellbook">Sell A Book</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink href="/login">Login</NavLink>
-            </NavItem>
-            </Nav>
+          <Nav className="ml-auto">
+          <NavItem>
+          <NavLink href="/login">Login</NavLink>
+          </NavItem>
+          </Nav>    
           </Collapse>
-        </Navbar>
-        
-      </div>
-    
+          </div>
+          </Navbar>
+          
+        </div>
+    </div>
     );
   }
 }
