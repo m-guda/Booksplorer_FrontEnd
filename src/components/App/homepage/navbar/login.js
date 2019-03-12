@@ -7,7 +7,7 @@ import {
   Button, FormText, FormFeedback,
 } from 'reactstrap';
 import './login.css';
-
+import Navbar from './index';
 class Login extends React.Component {
   constructor(props) {
     super(props);
@@ -47,9 +47,14 @@ class Login extends React.Component {
   }
 
   render() {
+ 
     const { email, password } = this.state;
     return (
-      <Container className="App">
+      
+      <div>
+       <Navbar/>
+       <div class="container">
+       <br/>
         <h2>Login</h2>
         <Form className="form" onSubmit={ (e) => this.submitForm(e) }>
           <Col>
@@ -87,7 +92,8 @@ class Login extends React.Component {
          <Button> <Link to="/register" style={{color:'#FFF'}} >Sign Up</Link> 
          </Button>
       </Form>
-      </Container>
+      </div>
+      </div>
     );
   }
 }

@@ -20,7 +20,7 @@ import {
 }from 'react-router-dom'
 import Login from './login';
 
-export default class Example extends React.Component {
+export default class NavBar extends React.Component  {
   constructor(props) {
     super(props);
 
@@ -45,8 +45,8 @@ export default class Example extends React.Component {
           <NavbarBrand href="/">About us</NavbarBrand>
           <NavbarBrand href="/">Contact us</NavbarBrand>
             <Nav className="ml-auto">
-              <NavItem>
-              <NavLink href="/sellbook">Sell A Book</NavLink>
+            <NavItem>
+              <NavLink href="/sellbook">Sell book</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/login">Login</NavLink>

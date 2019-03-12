@@ -1,9 +1,13 @@
 import React from 'react';
+import NavBar from './index';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 class Sellbook extends React.Component {
   render() {
     return (
+      <div>
+      <NavBar />
       <div class="container">
+      
       <br/>
       <center><h2>Book Details</h2></center>
       <Form>
@@ -36,6 +40,7 @@ class Sellbook extends React.Component {
         <center>
   <Button>Submit</Button></center>
   </Form>
+  </div>
   </div>
       );
     }

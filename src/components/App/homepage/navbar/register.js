@@ -1,9 +1,12 @@
 import React from 'react';
 import { Col, Row, Button, Form, FormGroup,Label, Input, FormText } from 'reactstrap';
+import NavBar from './index';
 
 class Register extends React.Component {
   render() {
     return (
+      <div>
+        <NavBar/>
       <div class="container">
       <Form>
         <center>
@@ -63,6 +66,7 @@ class Register extends React.Component {
         </Row>
         <Button class="btn btn-primary center-block">Register</Button>
       </Form>
+      </div>
       </div>
     );
   }
